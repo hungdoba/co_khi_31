@@ -1,16 +1,8 @@
 import Image from 'next/image';
-import PageIllustration from '@/components/page-illustration';
 import Avatar01 from '@/public/images/avatar-01.jpg';
 import Avatar02 from '@/public/images/avatar-02.jpg';
 import Avatar03 from '@/public/images/avatar-03.jpg';
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
+import PageIllustration from './PageIllustration';
 
 export default function HeroHome() {
   return (
@@ -96,7 +88,7 @@ export default function HeroHome() {
           </div>
 
           {/* Hero image */}
-          <div className="mx-auto">
+          {/* <div className="mx-auto">
             <Carousel>
               <CarouselContent>
                 <CarouselItem>
@@ -133,7 +125,7 @@ export default function HeroHome() {
               <CarouselPrevious />
               <CarouselNext />
             </Carousel>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 import { useState, useRef } from 'react';
 import Transition from '../utils/Transition';
 
-function FeaturesHome() {
+export default function Tools() {
   const [tab, setTab] = useState(1);
 
   const tabs = useRef(null);
@@ -32,22 +32,13 @@ function FeaturesHome() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">How Simple works</h1>
+            <h1 className="h2 mb-4">Danh sách thiết bị</h1>
             <p className="text-xl text-gray-600">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur excepteur sint occaecat
-              cupidatat.
+              Hiện tại xưởng chúng tôi có nhiều thiết bị hiện đại được nhập khẩu
+              từ Nhật và Đức. Đảm bảo chất lượng và đáp ứng mọi nhu cầu về gia
+              công. Chúng tôi sẽ tiếp tục mua thêm thiết bị mới để phục vụ khách
+              hàng tốt nhất.
             </p>
-          </div>
-
-          {/* Top image */}
-          <div className="pb-12 md:pb-16">
-            <img
-              src="../images/features-top-image.png"
-              width="1104"
-              height="325"
-              alt="Features top"
-            />
           </div>
 
           {/* Section content */}
@@ -58,11 +49,13 @@ function FeaturesHome() {
               data-aos="fade-right"
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
+                <h3 className="h3 mb-3">
+                  Các thiết bị đang có sẵn trong xưởng chúng tôi.
+                </h3>
                 <p className="text-xl text-gray-600">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa.
+                  Các thiết bị được bảo trì bảo dưỡng định kỳ, đảm bảo hoạt động
+                  trơn tru và hiệu quả. Giúp gia công các sản phẩm của quý khách
+                  hàng nhanh chóng và chất lượng.
                 </p>
               </div>
               {/* Tabs buttons */}
@@ -80,11 +73,11 @@ function FeaturesHome() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Máy tiện (Lathe Machine)
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Máy dùng để gia công các chi tiết có hình trụ hoặc hình
+                      cầu bằng cách quay phôi và cắt gọt bằng dao cắt.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
@@ -110,11 +103,11 @@ function FeaturesHome() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Máy phay CNC (CNC Milling Machine)
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Máy gia công chính xác với trục XYZ để tạo ra các chi tiết
+                      phức tạp theo bản vẽ.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
@@ -143,11 +136,11 @@ function FeaturesHome() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Máy hàn TIG/MIG/MAX (TIG/MIG/MAX Welding Machine)
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Máy sử dụng nhiệt để hàn kim loại, phù hợp cho các mối nối
+                      chắc chắn và thẩm mỹ cao.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
@@ -320,5 +313,3 @@ function FeaturesHome() {
     </section>
   );
 }
-
-export default FeaturesHome;

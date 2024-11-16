@@ -5,8 +5,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import Footer from '@/components/ui/footer';
-import Header from '@/components/ui/header';
+import Footer from '@/components/ui/Footer';
+import Header from '@/components/ui/Header';
 
 export default function DefaultLayout({
   children,
@@ -25,7 +25,7 @@ export default function DefaultLayout({
   return (
     <div className="max-w-screen-lg mx-auto">
       <Header />
-      <main className="grow">{children}</main>
+      <main className="grow mt-32">{children}</main>
       <Footer border={true} />
     </div>
   );

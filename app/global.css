@@ -16,3 +16,141 @@
 .btn-sm {
   @apply px-3 py-[5px] shadow;
 }
+
+/* Typography */
+.h1 {
+  @apply text-4xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h2 {
+  @apply text-3xl font-extrabold leading-tight tracking-tighter;
+}
+
+.h3 {
+  @apply text-3xl font-bold leading-tight;
+}
+
+.h4 {
+  @apply text-2xl font-bold leading-snug tracking-tight;
+}
+
+@screen md {
+  .h1 {
+    @apply text-5xl;
+  }
+
+  .h2 {
+    @apply text-4xl;
+  }
+}
+
+/* Buttons */
+.btn,
+.btn-sm {
+  @apply font-medium inline-flex items-center justify-center border border-transparent rounded leading-snug transition duration-150 ease-in-out;
+}
+
+.btn {
+  @apply px-8 py-3 shadow-lg;
+}
+
+.btn-sm {
+  @apply px-4 py-2 shadow;
+}
+
+/* Forms */
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox,
+.form-radio {
+  @apply bg-white border border-gray-300 focus:border-gray-500;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox {
+  @apply rounded;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select {
+  @apply py-3 px-4;
+}
+
+.form-input,
+.form-textarea {
+  @apply placeholder-gray-500;
+}
+
+.form-select {
+  @apply pr-10;
+}
+
+.form-checkbox,
+.form-radio {
+  @apply text-gray-800 rounded-sm;
+}
+
+/* Range slider */
+:root {
+  --range-thumb-size: 36px;
+}
+
+input[type='range'] {
+  appearance: none;
+  background: #ccc;
+  border-radius: 3px;
+  height: 6px;
+  margin-top: (--range-thumb-size - 6px) * 0.5;
+  margin-bottom: (--range-thumb-size - 6px) * 0.5;
+  --thumb-size: #{--range-thumb-size};
+}
+
+input[type='range']::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: --range-thumb-size;
+  width: --range-thumb-size;
+}
+
+input[type='range']::-moz-range-thumb {
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: --range-thumb-size;
+  width: --range-thumb-size;
+}
+
+input[type='range']::-ms-thumb {
+  background-color: #000;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 .5v7L12 4zM0 4l4 3.5v-7z' fill='%23FFF' fill-rule='nonzero'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: --range-thumb-size;
+  width: --range-thumb-size;
+}
+
+input[type='range']::-moz-focus-outer {
+  border: 0;
+}

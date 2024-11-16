@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { useState } from 'react';
-import Logo from './logo';
+import Logo from './Logo';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <nav
-      className={`container z-30 w-full max-w-screen-lg backdrop-blur-2xl border-b border-gray-200 dark:border-gray-700`}
+      className={`fixed top-0 container z-30 w-full max-w-screen-lg backdrop-blur-2xl border-b border-gray-200 dark:border-gray-700`}
     >
       <div className="flex flex-wrap md:flex-nowrap items-center justify-between py-4 md:py-4 md:gap-0 relative">
         <div className="relative z-20 w-full flex justify-between md:w-max md:px-0">
