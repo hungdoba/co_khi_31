@@ -1,4 +1,5 @@
-import './css/style.css';
+// import './css/style.css';
+import './global.css';
 
 import { Roboto } from 'next/font/google';
 
