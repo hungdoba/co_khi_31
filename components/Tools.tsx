@@ -1,6 +1,6 @@
 'use client';
 import { useState, useRef } from 'react';
-import Transition from '../../utils/Transition';
+import Transition from '../utils/Transition';
 import Image from 'next/image';
 
 export default function Tools() {
