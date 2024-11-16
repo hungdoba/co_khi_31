@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 export default function Logo() {
   return (
-    <Link href="/" className="inline-flex" aria-label="Cruip">
+    <div className="flex flex-row justify-center items-center gap-2 rounded-xl px-4 py-2">
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
         <path
           className="fill-blue-500"
@@ -17,6 +15,7 @@ export default function Logo() {
           clipRule="evenodd"
         />
       </svg>
-    </Link>
+      <p className="font-extrabold text-blue-800 text-xl">Cơ Khí 31</p>
+    </div>
   );
 }
