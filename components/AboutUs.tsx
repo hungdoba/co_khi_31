@@ -2,7 +2,7 @@ export default function AboutUs() {
   return (
     <section id="gioi-thieu">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-32 pb-12 md:pt-40 md:pb-16">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h1 mb-4">Việc gì khó để chúng tôi lo</h1>
             <p className="text-xl text-gray-600">

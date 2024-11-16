@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import PlanetImg from '@/public/images/planet.png';
 import PlanetOverlayImg from '@/public/images/planet-overlay.svg';
 import PlanetTagImg01 from '@/public/images/planet-tag-01.png';
 import PlanetTagImg02 from '@/public/images/planet-tag-02.png';
@@ -10,7 +9,7 @@ export default function Services() {
   return (
     <section
       id="dich-vu"
-      className="relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900"
+      className="scroll-mt-24 relative before:absolute before:inset-0 before:-z-20 before:bg-gray-900"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="py-12 md:py-20">

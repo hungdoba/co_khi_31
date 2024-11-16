@@ -3,6 +3,7 @@ import Avatar01 from '@/public/images/avatar-01.jpg';
 import Avatar02 from '@/public/images/avatar-02.jpg';
 import Avatar03 from '@/public/images/avatar-03.jpg';
 import PageIllustration from './PageIllustration';
+import Link from 'next/link';
 
 export default function HeroHome() {
   return (
@@ -65,67 +66,24 @@ export default function HeroHome() {
                   data-aos="zoom-y-out"
                   data-aos-delay={450}
                 >
-                  <a
-                    className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
-                  >
+                  <div className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500  text-white shadow sm:mb-0 sm:w-auto">
                     <span className="relative inline-flex items-center">
                       Gọi ngay: 08099684647{' '}
                       <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
                     </span>
-                  </a>
-                  <a
+                  </div>
+                  <Link
                     className="btn w-full bg-white text-gray-800 shadow hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
+                    href="/#gioi-thieu"
                   >
                     Tìm hiểu thêm
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Hero image */}
-          {/* <div className="mx-auto">
-            <Carousel>
-              <CarouselContent>
-                <CarouselItem>
-                  <Image
-                    className="rounded-3xl"
-                    objectFit="cover"
-                    width={1200}
-                    height={600}
-                    src="/factories/factory-1.jpg"
-                    alt="Avatar 01"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    className="rounded-3xl"
-                    objectFit="cover"
-                    width={1200}
-                    height={600}
-                    src="/factories/factory-2.jpg"
-                    alt="Avatar 02"
-                  />
-                </CarouselItem>
-                <CarouselItem>
-                  <Image
-                    className="rounded-3xl"
-                    objectFit="cover"
-                    width={1200}
-                    height={600}
-                    src="/factories/factory-3.jpg"
-                    alt="Avatar 03"
-                  />
-                </CarouselItem>
-              </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
-            </Carousel>
-          </div> */}
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef } from 'react';
 import Transition from '../utils/Transition';
+import Image from 'next/image';
 
 export default function Tools() {
   const [tab, setTab] = useState(1);
@@ -20,8 +21,7 @@ export default function Tools() {
   // }, [tab]);
 
   return (
-    <section className="relative">
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
+    <section id="thiet-bi" className="relative scroll-mt-16">
       <div
         className="absolute inset-0 bg-gray-100 pointer-events-none mb-16"
         aria-hidden="true"
@@ -45,20 +45,9 @@ export default function Tools() {
           <div className="md:grid md:grid-cols-12 md:gap-6">
             {/* Content */}
             <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
+              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-0"
               data-aos="fade-right"
             >
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">
-                  Các thiết bị đang có sẵn trong xưởng chúng tôi.
-                </h3>
-                <p className="text-xl text-gray-600">
-                  Các thiết bị được bảo trì bảo dưỡng định kỳ, đảm bảo hoạt động
-                  trơn tru và hiệu quả. Giúp gia công các sản phẩm của quý khách
-                  hàng nhanh chóng và chất lượng.
-                </p>
-              </div>
-              {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <button
                   className={`text-left flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
@@ -73,7 +62,7 @@ export default function Tools() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Máy tiện (Lathe Machine)
+                      Máy tiện
                     </div>
                     <div className="text-gray-600">
                       Máy dùng để gia công các chi tiết có hình trụ hoặc hình
@@ -103,7 +92,7 @@ export default function Tools() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Máy phay CNC (CNC Milling Machine)
+                      Máy phay CNC
                     </div>
                     <div className="text-gray-600">
                       Máy gia công chính xác với trục XYZ để tạo ra các chi tiết
@@ -136,11 +125,45 @@ export default function Tools() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Máy hàn TIG/MIG/MAX (TIG/MIG/MAX Welding Machine)
+                      Máy hàn TIG/MIG/MAX
                     </div>
                     <div className="text-gray-600">
                       Máy sử dụng nhiệt để hàn kim loại, phù hợp cho các mối nối
                       chắc chắn và thẩm mỹ cao.
+                    </div>
+                  </div>
+                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
+                    <svg
+                      className="w-3 h-3 fill-current"
+                      viewBox="0 0 12 12"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z"
+                        fill="#191919"
+                        fillRule="nonzero"
+                      />
+                    </svg>
+                  </div>
+                </button>
+                <button
+                  className={`text-left flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                    tab !== 4
+                      ? 'bg-white shadow-md border-gray-200 hover:shadow-lg'
+                      : 'bg-gray-200 border-transparent'
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setTab(4);
+                  }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">
+                      Máy cắt dây
+                    </div>
+                    <div className="text-gray-600">
+                      Máy dùng để cắt các chi tiết kim loại theo bản vẽ, độ
+                      chính xác cao.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow shrink-0 ml-3">
@@ -180,36 +203,12 @@ export default function Tools() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img
+                    <Image
                       className="md:max-w-none mx-auto rounded"
-                      src="../images/features-home-bg-01.png"
+                      src="/tools/lathe.jpg"
                       width="500"
                       height="375"
                       alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src="../images/features-home-element-01.png"
-                      width="500"
-                      height="147"
-                      alt="Element 01"
-                      style={{ top: '22%' }}
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500"
-                      src="../images/features-home-element-02.png"
-                      width="500"
-                      height="158"
-                      alt="Element 02"
-                      style={{ top: '39%' }}
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000"
-                      src="../images/features-home-element-03.png"
-                      width="500"
-                      height="167"
-                      alt="Element 03"
-                      style={{ top: '77%' }}
                     />
                   </div>
                 </Transition>
@@ -226,36 +225,12 @@ export default function Tools() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img
+                    <Image
                       className="md:max-w-none mx-auto rounded"
-                      src="images/features-home-bg-01.png"
+                      src="/tools/cnc.jpg"
                       width="500"
                       height="375"
                       alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src="images/features-home-element-01.png"
-                      width="500"
-                      height="147"
-                      alt="Element 01"
-                      style={{ top: '22%' }}
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500"
-                      src="images/features-home-element-02.png"
-                      width="500"
-                      height="158"
-                      alt="Element 02"
-                      style={{ top: '39%' }}
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000"
-                      src="images/features-home-element-0.png"
-                      width="500"
-                      height="167"
-                      alt="Element 03"
-                      style={{ top: '77%' }}
                     />
                   </div>
                 </Transition>
@@ -272,36 +247,34 @@ export default function Tools() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img
+                    <Image
                       className="md:max-w-none mx-auto rounded"
-                      src="images/features-home-bg-01.png"
+                      src="/tools/welding.jpg"
                       width="500"
                       height="375"
                       alt="Features bg"
                     />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src="images/features-home-element-01.png"
+                  </div>
+                </Transition>
+                {/* Item 4 */}
+                <Transition
+                  show={tab === 4}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <div className="relative inline-flex flex-col">
+                    <Image
+                      className="md:max-w-none mx-auto rounded"
+                      src="/tools/cutting.jpg"
                       width="500"
-                      height="147"
-                      alt="Element 01"
-                      style={{ top: '22%' }}
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float animation-delay-500"
-                      src="images/features-home-element-02.png"
-                      width="500"
-                      height="158"
-                      alt="Element 02"
-                      style={{ top: '39%' }}
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 bottom-0 transform animate-float animation-delay-1000"
-                      src="images/features-home-element-0.png"
-                      width="500"
-                      height="167"
-                      alt="Element 03"
-                      style={{ top: '77%' }}
+                      height="375"
+                      alt="Features bg"
                     />
                   </div>
                 </Transition>

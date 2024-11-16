@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <section className="bg-gradient-to-b from-white to-gray-100">
+    <section id="bang-gia" className="bg-gradient-to-b from-white to-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
@@ -49,7 +49,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Unlimited viewers</span>
+                    <span>Không giới hạn thiết bị</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -59,7 +59,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Up to 3 members</span>
+                    <span>Bảo hành 3 năm</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -69,7 +69,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Up to 2 projects</span>
+                    <span>Tư vấn miễn phí</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -79,7 +79,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Dedicated support</span>
+                    <span>Giảm giá với số lượng lớn</span>
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">
@@ -120,7 +120,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Unlimited viewers</span>
+                    <span>Không giới hạn thiết bị</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -130,7 +130,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Up to 3 members</span>
+                    <span>Bảo hành 3 năm</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -140,7 +140,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Up to 2 projects</span>
+                    <span>Tư vấn miễn phí</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -150,7 +150,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Dedicated support</span>
+                    <span>Giảm giá với số lượng lớn</span>
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">
@@ -190,7 +190,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Unlimited viewers</span>
+                    <span>Không giới hạn thiết bị</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -200,7 +200,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Up to 3 members</span>
+                    <span>Bảo hành 3 năm</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -210,7 +210,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Up to 2 projects</span>
+                    <span>Tư vấn miễn phí</span>
                   </li>
                   <li className="flex items-center mb-2">
                     <svg
@@ -220,7 +220,7 @@ export default function Pricing() {
                     >
                       <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                     </svg>
-                    <span>Dedicated support</span>
+                    <span>Giảm giá với số lượng lớn</span>
                   </li>
                 </ul>
                 <div className="border-t border-gray-200 pt-5 mt-6">

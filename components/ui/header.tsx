@@ -54,14 +54,14 @@ export default function Header() {
         <div
           onClick={toggleMenu}
           aria-hidden="true"
-          className={`fixed z-10 inset-0 h-screen w-screen md:hidden bg-white/70 backdrop-blur-2xl origin-top transition duration-500 ${
+          className={`fixed z-10 inset-0 h-screen w-screen md:hidden origin-top transition duration-500 ${
             isMenuOpen ? 'scale-y-100' : 'scale-y-0'
           } md:hidden dark:bg-gray-900/70`}
         ></div>
 
         {/* Menu */}
         <div
-          className={`z-20 gap-6 rounded-3xl shadow-2xl shadow-gray-600/10 justify-end w-full transition-all duration-300 scale-95 origin-top ${
+          className={`z-20 gap-6 rounded-3xl shadow-2xl shadow-gray-600/10 justify-end w-full transition-all duration-600 scale-95 origin-top ${
             isMenuOpen
               ? 'mt-8 md:mt-0 p-8 md:p-0  opacity-100 visible'
               : 'mt-0 h-0 p-0 invisible opacity-0 md:visible md:opacity-100'
@@ -70,10 +70,11 @@ export default function Header() {
           <div className="md:flex md:flex-row md:items-center">
             {/* Menu options */}
             <div className={`md:pr-4 md:w-auto w-full md:pt-0`}>
-              <ul className="tracking-wide font-medium md:text-sm flex-col flex md:flex-row gap-6 md:gap-0">
+              <ul className="text-gray-600 tracking-wide font-medium md:text-sm flex-col flex md:flex-row gap-6 md:gap-0">
                 <li>
                   <Link
                     href={`/#gioi-thieu`}
+                    onClick={toggleMenu}
                     className={`block md:px-4 transition hover:text-primary`}
                   >
                     <span>Giới thiệu</span>
@@ -81,6 +82,7 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
+                    onClick={toggleMenu}
                     href={`/#dich-vu`}
                     className={`block md:px-4 transition hover:text-primary`}
                   >
@@ -89,14 +91,16 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
-                    href={`/#du-an-tieu-bieu`}
+                    onClick={toggleMenu}
+                    href={`/#du-an`}
                     className={`block md:px-4 transition hover:text-primary`}
                   >
-                    <span>Dự án tiêu biểu</span>
+                    <span>Dự án</span>
                   </Link>
                 </li>
                 <li>
                   <Link
+                    onClick={toggleMenu}
                     href={`/#doi-ngu`}
                     className={`block md:px-4 transition hover:text-primary`}
                   >
@@ -105,6 +109,25 @@ export default function Header() {
                 </li>
                 <li>
                   <Link
+                    onClick={toggleMenu}
+                    href={`/#bang-gia`}
+                    className={`block md:px-4 transition hover:text-primary`}
+                  >
+                    <span>Bảng giá</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={toggleMenu}
+                    href={`/#thiet-bi`}
+                    className={`block md:px-4 transition hover:text-primary`}
+                  >
+                    <span>Thiết bị</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={toggleMenu}
                     href={`/#lien-he`}
                     className={`block md:px-4 transition hover:text-primary`}
                   >
