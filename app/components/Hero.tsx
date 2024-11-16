@@ -5,7 +5,7 @@ import Avatar03 from '@/public/images/avatar-03.jpg';
 import PageIllustration from './PageIllustration';
 import Link from 'next/link';
 
-export default function HeroHome() {
+export default function Hero() {
   return (
     <section className="relative">
       <PageIllustration />

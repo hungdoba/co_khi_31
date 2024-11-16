@@ -1,12 +1,11 @@
+import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from '@/components/ui/Carousel';
-
-import Image from 'next/image';
+} from './ui/Carousel';
 
 export default function Projects() {
   return (

@@ -1,24 +1,12 @@
 'use client';
 import { useState, useRef } from 'react';
-import Transition from '../utils/Transition';
+import Transition from '../../utils/Transition';
 import Image from 'next/image';
 
 export default function Tools() {
   const [tab, setTab] = useState(1);
 
   const tabs = useRef(null);
-
-  // const heightFix = () => {
-  //   if (tabs.current.children[tab - 1]) {
-  //     tabs.current.style.height =
-  //       tabs.current.children[tab - 1].offsetHeight + 'px';
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   heightFix();
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [tab]);
 
   return (
     <section id="thiet-bi" className="relative scroll-mt-16">
