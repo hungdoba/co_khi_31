@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export default function AboutUs() {
   return (
     <section id="gioi-thieu">
@@ -14,7 +15,7 @@ export default function AboutUs() {
           </div>
 
           <figure className="flex justify-center items-start">
-            <img
+            <Image
               className="rounded shadow-2xl"
               src="images/about-01.jpg"
               width="768"
@@ -43,7 +44,7 @@ export default function AboutUs() {
 
           <div className="sm:flex">
             <figure className="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 sm:mb-0">
-              <img
+              <Image
                 className="grow self-start rounded"
                 src="images/about-02.jpg"
                 width="435"

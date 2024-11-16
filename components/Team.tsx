@@ -1,3 +1,4 @@
+import Image from 'next/image';
 function Team() {
   return (
     <section
@@ -23,7 +24,7 @@ function Team() {
               data-aos-anchor="[data-aos-id-team]"
             >
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   className="rounded-full mb-4"
                   src="images/team-member-01.jpg"
                   width="120"
@@ -53,7 +54,7 @@ function Team() {
               data-aos-anchor="[data-aos-id-team]"
             >
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   className="rounded-full mb-4"
                   src="images/team-member-02.jpg"
                   width="120"
@@ -84,7 +85,7 @@ function Team() {
               data-aos-anchor="[data-aos-id-team]"
             >
               <div className="flex flex-col items-center">
-                <img
+                <Image
                   className="rounded-full mb-4"
                   src="images/team-member-03.jpg"
                   width="120"
