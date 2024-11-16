@@ -26,7 +26,7 @@ function Team() {
               <div className="flex flex-col items-center">
                 <Image
                   className="rounded-full mb-4"
-                  src="images/team-member-01.jpg"
+                  src="/images/team-member-01.jpg"
                   width="120"
                   height="120"
                   alt="Team member 01"
@@ -56,7 +56,7 @@ function Team() {
               <div className="flex flex-col items-center">
                 <Image
                   className="rounded-full mb-4"
-                  src="images/team-member-02.jpg"
+                  src="/images/team-member-02.jpg"
                   width="120"
                   height="120"
                   alt="Team member 02"
@@ -87,7 +87,7 @@ function Team() {
               <div className="flex flex-col items-center">
                 <Image
                   className="rounded-full mb-4"
-                  src="images/team-member-03.jpg"
+                  src="/images/team-member-03.jpg"
                   width="120"
                   height="120"
                   alt="Team member 03"

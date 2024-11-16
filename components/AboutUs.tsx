@@ -17,7 +17,7 @@ export default function AboutUs() {
           <figure className="flex justify-center items-start">
             <Image
               className="rounded shadow-2xl"
-              src="images/about-01.jpg"
+              src="/images/about-01.jpg"
               width="768"
               height="432"
               alt="About us"
@@ -46,7 +46,7 @@ export default function AboutUs() {
             <figure className="flex shrink-0 max-w-none sm:max-w-xs lg:max-w-none mb-8 sm:mb-0">
               <Image
                 className="grow self-start rounded"
-                src="images/about-02.jpg"
+                src="/images/about-02.jpg"
                 width="435"
                 height="326"
                 alt="About us 02"
